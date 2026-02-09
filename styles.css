@@ -1,5 +1,5 @@
 /* ========================================
-   AutoHub Kenya - Modern Car Marketplace
+   Benny's Carplace - Modern Car Marketplace
    Professional & Vibrant Design System
    ======================================== */
 
@@ -400,6 +400,18 @@ ul {
 .brand-icon {
     font-size: 3rem;
     margin-bottom: var(--spacing-sm);
+}
+
+.brand-icon-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: var(--spacing-sm);
+    transition: transform 0.3s ease;
+}
+
+.brand-card:hover .brand-icon-img {
+    transform: scale(1.1);
 }
 
 .brand-card h3 {

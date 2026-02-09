@@ -206,7 +206,7 @@ function handleFormSubmit(e) {
             registrationDate: formData.registrationDate
         };
         
-        localStorage.setItem('autohub_user', JSON.stringify(userData));
+        localStorage.setItem('bennyscarplace_user', JSON.stringify(userData));
         
         // Log registration event (DPA 2019 compliance)
         console.log('User registered successfully');

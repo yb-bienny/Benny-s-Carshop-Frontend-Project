@@ -1,6 +1,6 @@
-# 🚀 AutoHub Kenya - Quick Start Guide
+# Benny's Carplace - Quick Start Guide
 
-## ⚡ Immediate Setup (5 Minutes)
+## Immediate Setup (5 Minutes)
 
 ### Option 1: View Locally (Fastest)
 1. Download all project files to a folder
@@ -10,7 +10,7 @@
 ### Option 2: Run with Local Server (Recommended)
 ```bash
 # Navigate to project folder
-cd autohub-kenya
+cd bennys-carplace
 
 # Python 3
 python -m http.server 8000
@@ -23,14 +23,14 @@ python -m SimpleHTTPServer 8000
 
 ### Option 3: Deploy to GitHub Pages (For Sharing)
 ```bash
-# 1. Create new repository on GitHub named "autohub-kenya"
+# 1. Create new repository on GitHub named "bennys-carplace"
 
 # 2. In your project folder:
 git init
 git add .
-git commit -m "Initial commit - AutoHub Kenya marketplace"
+git commit -m "Initial commit - Benny's Carplace marketplace"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/autohub-kenya.git
+git remote add origin https://github.com/YOUR_USERNAME/bennys-carplace.git
 git push -u origin main
 
 # 3. Enable GitHub Pages:
@@ -39,12 +39,12 @@ git push -u origin main
 # Folder: / (root)
 # Save
 
-# 4. Access at: https://YOUR_USERNAME.github.io/autohub-kenya/
+# 4. Access at: https://YOUR_USERNAME.github.io/bennys-carplace/
 ```
 
 ---
 
-## 📋 Testing Checklist
+## Testing Checklist
 
 ### ✅ Essential Features to Test
 
@@ -120,7 +120,7 @@ git push -u origin main
 
 ---
 
-## 🔍 What to Look For
+## What to Look For
 
 ### Visual Quality
 ✅ **Professional appearance** - Orange/navy color scheme
@@ -344,7 +344,7 @@ python -m http.server 8000
 
 ---
 
-## 📞 Support & Resources
+## Support & Resources
 
 **Project Documentation**: DOCUMENTATION.md (technical details)
 **README**: README.md (GitHub overview)

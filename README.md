@@ -1,14 +1,14 @@
-# 🚗 AutoHub Kenya - Online Car Marketplace
+# Benny's Carplace - Online Car Marketplace
 
 A modern, responsive car marketplace web application built with pure HTML, CSS, and JavaScript. Fully compliant with Kenya's Data Protection Act (2019).
 
-![AutoHub Kenya](https://img.shields.io/badge/Status-Active-success)
+![Benny's Carplace](https://img.shields.io/badge/Status-Active-success)
 ![License](https://img.shields.io/badge/License-Educational-blue)
 ![Kenya DPA 2019](https://img.shields.io/badge/Kenya%20DPA-2019%20Compliant-green)
 
 ## 🎯 Project Overview
 
-AutoHub Kenya is a capstone project for an Internet Technologies course, demonstrating:
+Benny's Carplace is a capstone project for an Internet Technologies course, demonstrating:
 - Modern frontend development with vanilla JavaScript
 - Responsive web design for mobile and desktop
 - Privacy-first approach compliant with Kenyan law
@@ -17,30 +17,30 @@ AutoHub Kenya is a capstone project for an Internet Technologies course, demonst
 ## ✨ Features
 
 ### Core Functionality
-- 🔍 **Real-time Search** - Instant vehicle filtering across brand, model, and year
-- 🎛️ **Advanced Filters** - Filter by brand, condition, year, price, and county
-- ❤️ **Wishlist** - Save favorite vehicles for later viewing
-- ⚖️ **Comparison Tool** - Compare up to 3 vehicles side-by-side
-- 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop
-- 🍪 **Cookie Consent** - GDPR-style consent banner for privacy compliance
+- **Real-time Search** - Instant vehicle filtering across brand, model, and year
+- **Advanced Filters** - Filter by brand, condition, year, price, and county
+- **Wishlist** - Save favorite vehicles for later viewing
+- **Comparison Tool** - Compare up to 3 vehicles side-by-side
+- **Fully Responsive** - Optimized for mobile, tablet, and desktop
+- **Cookie Consent** - GDPR-style consent banner for privacy compliance
 
 ### User Features
-- ✅ **Registration Form** - Kenyan-specific validation (phone, ID, counties)
-- 🔒 **Privacy Compliance** - Full Privacy Policy and Terms of Service
-- 🌍 **47 Counties** - Complete coverage of all Kenyan counties
-- 🚘 **Featured Brands** - Toyota, Nissan, Honda, Subaru, Volkswagen
+- **Registration Form** - Kenyan-specific validation (phone, ID, counties)
+- **Privacy Compliance** - Full Privacy Policy and Terms of Service
+- **47 Counties** - Complete coverage of all Kenyan counties
+- **Featured Brands** - Toyota, Nissan, Honda, Subaru, Volkswagen
 
 ### Legal Compliance
-- ✅ Data Protection Act (2019) - Kenya
-- ✅ Computer Misuse and Cybercrimes Act (2018)
-- ✅ National ICT Policy (2019)
-- ✅ ODPC Guidelines Implementation
+- Data Protection Act (2019) - Kenya
+- Computer Misuse and Cybercrimes Act (2018)
+- National ICT Policy (2019)
+- ODPC Guidelines Implementation
 
-## 🚀 Live Demo
+## Live Demo
 
-**GitHub Pages**: [View Live Demo](https://yourusername.github.io/autohub-kenya/)
+**GitHub Pages**: [View Live Demo](https://yourusername.github.io/bennys-carplace/)
 
-## 📸 Screenshots
+## Screenshots
 
 ### Homepage
 Clean, modern interface with hero section and featured vehicles
@@ -51,7 +51,7 @@ Advanced filtering and real-time search capabilities
 ### Registration Form
 Comprehensive validation with Kenyan-specific fields
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5** - Semantic markup
 - **CSS3** - Custom design system, CSS Grid, Flexbox
@@ -59,20 +59,20 @@ Comprehensive validation with Kenyan-specific fields
 - **LocalStorage** - Client-side data persistence
 - **Cookies** - Session tracking and preferences (with consent)
 
-## 📋 Requirements
+## Requirements
 
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - JavaScript enabled
 - No backend server required (frontend-only)
 
-## 💻 Installation & Setup
+## Installation & Setup
 
 ### Local Development
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/autohub-kenya.git
-cd autohub-kenya
+git clone https://github.com/yourusername/bennys-carplace.git
+cd bennys-carplace
 ```
 
 2. **Open in browser**
@@ -105,13 +105,13 @@ git push origin main
 - Click Save
 
 3. **Access your site**
-- URL: `https://yourusername.github.io/autohub-kenya/`
+- URL: `https://yourusername.github.io/bennys-carplace/`
 - Wait 1-2 minutes for deployment
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-autohub-kenya/
+bennys-carplace/
 ├── index.html              # Homepage
 ├── listings.html           # Vehicle listings with filters
 ├── register.html           # User registration
@@ -196,7 +196,7 @@ Comprehensive technical documentation is available in [DOCUMENTATION.md](DOCUMEN
 - Deployment instructions
 - Future enhancements
 
-## 🤝 Contributing
+## Contributing
 
 This is an educational project. Contributions, issues, and feature requests are welcome!
 
@@ -206,30 +206,30 @@ This is an educational project. Contributions, issues, and feature requests are 
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is created for educational purposes as part of an Internet Technologies course capstone project.
 
 ## 👨‍💻 Author
 
-**AutoHub Kenya Development Team**
+**Benny's Carplace Development Team**
 - Course: Internet Technologies
 - Project: Capstone - Simple Online Marketplace
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Legal Framework**: Office of the Data Protection Commissioner (ODPC), Kenya
 - **Images**: Unsplash (free stock photos)
 - **Fonts**: Google Fonts
 - **Inspiration**: Modern car marketplaces and Kenyan automotive market needs
 
-## 📞 Contact
+## Contact
 
-- **Email**: info@autohub.co.ke
-- **Privacy**: privacy@autohub.co.ke
+- **Email**: info@benny'scarplace.co.ke
+- **Privacy**: privacy@benny'scarplace.co.ke
 - **ODPC**: www.odpc.go.ke
 
-## 🔄 Version History
+## Version History
 
 - **v1.0** (Feb 2024) - Initial release
   - Core marketplace functionality
@@ -249,4 +249,4 @@ This project is created for educational purposes as part of an Internet Technolo
 
 ---
 
-Made with ❤️ in Kenya 🇰🇪
+Made in Kenya

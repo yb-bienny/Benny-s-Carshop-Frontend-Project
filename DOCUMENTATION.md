@@ -1,7 +1,7 @@
-# AutoHub Kenya - Technical Documentation
+# Benny's Carplace - Technical Documentation
 
 ## Project Overview
-AutoHub Kenya is a modern, responsive car marketplace web application built exclusively with HTML, CSS, and JavaScript. The platform connects buyers and sellers across Kenya's 47 counties while maintaining strict compliance with Kenya's Data Protection Act (2019) and related cybersecurity legislation.
+Benny's Carplace is a modern, responsive car marketplace web application built exclusively with HTML, CSS, and JavaScript. The platform connects buyers and sellers across Kenya's 47 counties while maintaining strict compliance with Kenya's Data Protection Act (2019) and related cybersecurity legislation.
 
 ---
 
@@ -15,7 +15,7 @@ AutoHub Kenya is a modern, responsive car marketplace web application built excl
 
 ### 1.2 File Structure
 ```
-autohub-kenya/
+bennys-carplace/
 ├── index.html              # Homepage with hero section and featured cars
 ├── listings.html           # Browse all vehicles with filters
 ├── register.html           # User registration form
@@ -58,12 +58,12 @@ class CookieManager {
 
 **Cookie Types**:
 1. **Essential Cookies** (always active):
-   - `autohub_session`: Session identifier (expires on browser close)
-   - `autohub_consent`: Records user's consent choice (365 days)
+   - `bennyscarplace_session`: Session identifier (expires on browser close)
+   - `bennyscarplace_consent`: Records user's consent choice (365 days)
 
 2. **Preference Cookies** (requires consent):
-   - `autohub_preferences`: Saves sort order, display preferences (365 days)
-   - `autohub_viewed_cars`: Tracks recently viewed vehicles (30 days)
+   - `bennyscarplace_preferences`: Saves sort order, display preferences (365 days)
+   - `bennyscarplace_viewed_cars`: Tracks recently viewed vehicles (30 days)
 
 **Legal Compliance**:
 - Explicit consent before non-essential cookies
@@ -267,13 +267,13 @@ class WishlistManager {
 
 ### 7.1 GitHub Pages Deployment
 ```bash
-1. Create GitHub repository: "autohub-kenya"
+1. Create GitHub repository: "bennys-carplace"
 2. Upload all project files
 3. Go to Settings → Pages
 4. Select branch: main
 5. Folder: / (root)
 6. Save and wait for deployment
-7. Access at: https://yourusername.github.io/autohub-kenya
+7. Access at: https://yourusername.github.io/bennys-carplace
 ```
 
 ### 7.2 Local Testing
@@ -353,10 +353,10 @@ class WishlistManager {
 
 ## Contact & Support
 
-**Project Creator**: AutoHub Kenya Development Team
-**Email**: info@autohub.co.ke
-**Privacy Questions**: privacy@autohub.co.ke
-**Technical Support**: support@autohub.co.ke
+**Project Creator**: Benny's Carplace Development Team
+**Email**: info@benny'scarplace.co.ke
+**Privacy Questions**: privacy@benny'scarplace.co.ke
+**Technical Support**: support@benny'scarplace.co.ke
 
 **ODPC Contact**:
 - Website: www.odpc.go.ke

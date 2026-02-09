@@ -1,5 +1,5 @@
 // ========================================
-// AutoHub Kenya - Main JavaScript
+// Benny's Carplace - Main JavaScript
 // Cookie Management & Core Functionality
 // Compliant with Kenya Data Protection Act 2019
 // ========================================
@@ -10,7 +10,7 @@
 
 class CookieManager {
     constructor() {
-        this.cookiePrefix = 'autohub_';
+        this.cookiePrefix = 'bennyscarplace_';
         this.consentCookieName = this.cookiePrefix + 'consent';
         this.sessionCookieName = this.cookiePrefix + 'session';
         this.preferencesCookieName = this.cookiePrefix + 'preferences';
@@ -269,7 +269,7 @@ if (filterToggle && filtersSidebar) {
 
 class WishlistManager {
     constructor() {
-        this.storageKey = 'autohub_wishlist';
+        this.storageKey = 'bennyscarplace_wishlist';
         this.wishlist = this.loadWishlist();
         this.updateWishlistCount();
     }
@@ -349,7 +349,7 @@ const wishlistManager = new WishlistManager();
 
 class ComparisonManager {
     constructor() {
-        this.storageKey = 'autohub_comparison';
+        this.storageKey = 'bennyscarplace_comparison';
         this.maxItems = 3;
         this.comparison = this.loadComparison();
     }
@@ -437,7 +437,7 @@ const carDatabase = [
         fuelType: 'Diesel',
         county: 'Nairobi',
         description: 'Brand new Toyota Land Cruiser Prado with all modern features',
-        image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600'
+        image: 'https://images.unsplash.com/photo-1650530579355-7ad9d4766043?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZCUyMGNydWlzZXJ8ZW58MHx8MHx8fDA%3D'
     },
     {
         id: 'car-2',
@@ -451,7 +451,7 @@ const carDatabase = [
         fuelType: 'Diesel',
         county: 'Mombasa',
         description: 'Well-maintained Toyota Hilux, perfect for both city and off-road',
-        image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnjmxEtXkQ_EzmWhMoXysFvKzJS54Cr2xWsA&s'
     },
     {
         id: 'car-3',
@@ -465,7 +465,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Nakuru',
         description: 'Reliable Toyota Corolla, excellent fuel economy',
-        image: 'https://images.unsplash.com/photo-1623869675058-72c8e0dc5b8c?w=600'
+        image: 'https://images.unsplash.com/photo-1657872737697-737a2d123ef2?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG95b3RhJTIwY2FyfGVufDB8fDB8fHww'
     },
     {
         id: 'car-4',
@@ -479,7 +479,7 @@ const carDatabase = [
         fuelType: 'Hybrid',
         county: 'Nairobi',
         description: 'Latest Toyota RAV4 Hybrid with advanced safety features',
-        image: 'https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=600'
+        image: 'https://images.unsplash.com/photo-1597799980291-19f88b1cf1c1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHJhdjR8ZW58MHx8MHx8fDA%3D'
     },
     
     // Nissan
@@ -495,7 +495,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Kisumu',
         description: 'Spacious Nissan X-Trail SUV, perfect for families',
-        image: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjju9tMj6eT8yBM15F0KCv5LMhJCcci_qpog&s'
     },
     {
         id: 'car-6',
@@ -509,7 +509,7 @@ const carDatabase = [
         fuelType: 'Diesel',
         county: 'Nairobi',
         description: 'Powerful Nissan Patrol, built for rugged terrain',
-        image: 'https://images.unsplash.com/photo-1552519507-ac12e4543f5f?w=600'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSnbd_KLpjybCbN9JKy4yII7aj0hKi3NG1aA&s'
     },
     {
         id: 'car-7',
@@ -523,7 +523,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Kiambu',
         description: 'Compact and economical Nissan Note',
-        image: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600'
+        image: 'https://www.shutterstock.com/image-photo/milton-keynesuk-july-13th-2023-260nw-2331632931.jpg'
     },
     
     // Honda
@@ -539,7 +539,7 @@ const carDatabase = [
         fuelType: 'Hybrid',
         county: 'Nairobi',
         description: 'Honda CR-V Hybrid with premium interior',
-        image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMsATgDiYt8WZwzDwAS6DVi22XINzsuxOXlw&s'
     },
     {
         id: 'car-9',
@@ -553,7 +553,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Mombasa',
         description: 'Sporty Honda Civic with excellent handling',
-        image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600'
+        image: 'https://images.unsplash.com/photo-1610768207795-72169abdf0d4?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvbmRhJTIwY2l2aWN8ZW58MHx8MHx8fDA%3D'
     },
     {
         id: 'car-10',
@@ -567,7 +567,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Nakuru',
         description: 'Versatile Honda Fit, great for city driving',
-        image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600'
+        image: 'https://images.unsplash.com/photo-1654870646430-e5b6f2c0fa93?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvbmRhJTIwZml0fGVufDB8fDB8fHww'
     },
     
     // Subaru
@@ -583,7 +583,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Nairobi',
         description: 'Subaru Forester with AWD and EyeSight technology',
-        image: 'https://images.unsplash.com/photo-1621135802920-133df287f89c?w=600'
+        image: 'https://images.unsplash.com/photo-1722542517938-aa6a98d25235?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3ViYXJ1JTIwZm9yZXN0ZXJ8ZW58MHx8MHx8fDA%3D'
     },
     {
         id: 'car-12',
@@ -597,7 +597,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Kisumu',
         description: 'Adventure-ready Subaru Outback',
-        image: 'https://images.unsplash.com/photo-1605451165371-6f0b8f7c9b22?w=600'
+        image: 'https://images.unsplash.com/photo-1681680061152-d3fc0d999a8e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         id: 'car-13',
@@ -611,7 +611,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Kiambu',
         description: 'Reliable Subaru Impreza with AWD',
-        image: 'https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?w=600'
+        image: 'https://images.unsplash.com/photo-1592501706475-0fa88c3a86c8?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     
     // Volkswagen
@@ -627,7 +627,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Nairobi',
         description: 'Premium Volkswagen Tiguan with digital cockpit',
-        image: 'https://images.unsplash.com/photo-1617654112368-307921291f42?w=600'
+        image: 'https://images.unsplash.com/photo-1655286182008-2a6578c7f487?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGlndWFufGVufDB8fDB8fHww'
     },
     {
         id: 'car-15',
@@ -641,7 +641,7 @@ const carDatabase = [
         fuelType: 'Petrol',
         county: 'Mombasa',
         description: 'Compact Volkswagen Polo, great fuel efficiency',
-        image: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHisyUVU6WJ7bywQsdi6G04s4fntVDLRORVA&s'
     },
     {
         id: 'car-16',
@@ -655,7 +655,7 @@ const carDatabase = [
         fuelType: 'Diesel',
         county: 'Nakuru',
         description: 'Executive Volkswagen Passat with luxury features',
-        image: 'https://images.unsplash.com/photo-1610381143222-6beee928c8c4?w=600'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdi8MGyGpMWn8ls2g0zq1MQV2auzxHt-qjQ&s'
     }
 ];
 
@@ -726,7 +726,7 @@ function createCarCard(car) {
                     </div>
                 </div>
                 <div class="car-price">${formatPrice(car.price)}</div>
-                <div class="car-location">📍 ${car.county}</div>
+                <div class="car-location">Nairobi, ${car.county}</div>
                 <div class="car-actions">
                     <button class="icon-btn wishlist-btn ${isInWishlist ? 'active' : ''}" 
                             data-car-id="${car.id}" 
@@ -810,6 +810,6 @@ window.formatMileage = formatMileage;
 window.createCarCard = createCarCard;
 window.addCarCardEventListeners = addCarCardEventListeners;
 
-console.log('AutoHub Kenya initialized successfully');
+console.log('Benny\'s Carplace initialized successfully');
 console.log('Cookie consent:', cookieManager.getCookie(cookieManager.consentCookieName));
 console.log('Session ID:', cookieManager.getCookie(cookieManager.sessionCookieName));
