@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - AutoHub Kenya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <span class="logo">🚗 AutoHub</span>
+                    <span class="logo-subtitle">Kenya</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Browse Cars</a></li>
+                <li><a href="comparison.html">Compare</a></li>
+                <li><a href="wishlist.html" class="active">Wishlist <span id="wishlistCount" class="badge">0</span></a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline" onclick="location.href='register.html'">Sign Up</button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="wishlist-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>My Wishlist</h1>
+                <p>Your saved favorite vehicles</p>
+            </div>
+
+            <div id="emptyWishlist" class="empty-state">
+                <div class="empty-icon">💝</div>
+                <h2>Your Wishlist is Empty</h2>
+                <p>Start adding your favorite vehicles to keep track of cars you're interested in</p>
+                <button class="btn btn-primary btn-large" onclick="location.href='listings.html'">Browse Vehicles</button>
+            </div>
+
+            <div id="wishlistContainer" class="wishlist-container hidden">
+                <div class="wishlist-controls">
+                    <div class="wishlist-info">
+                        <span id="wishlistItemCount">0</span> vehicles saved
+                    </div>
+                    <button class="btn btn-outline" onclick="clearWishlist()">Clear Wishlist</button>
+                </div>
+
+                <div class="cars-grid" id="wishlistGrid">
+                    <!-- Wishlist cars will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AutoHub Kenya</h3>
+                    <p>Your trusted partner in finding the perfect vehicle across Kenya.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="listings.html">Browse Cars</a></li>
+                        <li><a href="comparison.html">Compare</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📧 info@autohub.co.ke</li>
+                        <li>📞 +254 700 123 456</li>
+                        <li>📍 Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoHub Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="wishlist.js"></script>
+</body>
+</html>

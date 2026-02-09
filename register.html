@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register to access exclusive features on AutoHub Kenya">
+    <title>Register - AutoHub Kenya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <span class="logo">🚗 AutoHub</span>
+                    <span class="logo-subtitle">Kenya</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Browse Cars</a></li>
+                <li><a href="comparison.html">Compare</a></li>
+                <li><a href="wishlist.html">Wishlist <span id="wishlistCount" class="badge">0</span></a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline" onclick="location.href='register.html'">Sign Up</button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Section -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-wrapper">
+                <div class="registration-info">
+                    <h1>Join AutoHub Kenya</h1>
+                    <p class="registration-subtitle">Create your account to access exclusive features</p>
+                    
+                    <div class="benefits-list">
+                        <h3>Member Benefits:</h3>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <h4>Save Favorites</h4>
+                                <p>Keep track of cars you're interested in</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <h4>Compare Vehicles</h4>
+                                <p>Side-by-side comparison of up to 3 cars</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <h4>Get Alerts</h4>
+                                <p>Receive notifications about new listings</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <h4>Secure & Private</h4>
+                                <p>Kenya DPA 2019 compliant data protection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="privacy-notice">
+                        <p><strong>Privacy Notice:</strong> Your personal data will be processed in accordance with Kenya's Data Protection Act (2019). By registering, you consent to the collection and processing of your information as outlined in our <a href="privacy.html">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+
+                <div class="registration-form-container">
+                    <form id="registrationForm" class="registration-form" novalidate>
+                        <h2>Create Account</h2>
+                        
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                name="fullName" 
+                                class="form-input" 
+                                placeholder="Enter your full name"
+                                required
+                                minlength="3"
+                            >
+                            <span class="error-message" id="fullNameError"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="your.email@example.com"
+                                required
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-input" 
+                                placeholder="+254 700 123 456"
+                                required
+                                pattern="^(\+254|0)[17]\d{8}$"
+                            >
+                            <span class="help-text">Format: +254 or 07XX XXX XXX</span>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <!-- ID Number -->
+                        <div class="form-group">
+                            <label for="idNumber" class="form-label">National ID / Passport Number <span class="required">*</span></label>
+                            <input 
+                                type="text" 
+                                id="idNumber" 
+                                name="idNumber" 
+                                class="form-input" 
+                                placeholder="Enter your ID or Passport number"
+                                required
+                                minlength="7"
+                            >
+                            <span class="help-text">Required for identity verification</span>
+                            <span class="error-message" id="idNumberError"></span>
+                        </div>
+
+                        <!-- County Dropdown -->
+                        <div class="form-group">
+                            <label for="county" class="form-label">County <span class="required">*</span></label>
+                            <select id="county" name="county" class="form-select" required>
+                                <option value="">Select your county</option>
+                                <option value="Baringo">Baringo</option>
+                                <option value="Bomet">Bomet</option>
+                                <option value="Bungoma">Bungoma</option>
+                                <option value="Busia">Busia</option>
+                                <option value="Elgeyo-Marakwet">Elgeyo-Marakwet</option>
+                                <option value="Embu">Embu</option>
+                                <option value="Garissa">Garissa</option>
+                                <option value="Homa Bay">Homa Bay</option>
+                                <option value="Isiolo">Isiolo</option>
+                                <option value="Kajiado">Kajiado</option>
+                                <option value="Kakamega">Kakamega</option>
+                                <option value="Kericho">Kericho</option>
+                                <option value="Kiambu">Kiambu</option>
+                                <option value="Kilifi">Kilifi</option>
+                                <option value="Kirinyaga">Kirinyaga</option>
+                                <option value="Kisii">Kisii</option>
+                                <option value="Kisumu">Kisumu</option>
+                                <option value="Kitui">Kitui</option>
+                                <option value="Kwale">Kwale</option>
+                                <option value="Laikipia">Laikipia</option>
+                                <option value="Lamu">Lamu</option>
+                                <option value="Machakos">Machakos</option>
+                                <option value="Makueni">Makueni</option>
+                                <option value="Mandera">Mandera</option>
+                                <option value="Marsabit">Marsabit</option>
+                                <option value="Meru">Meru</option>
+                                <option value="Migori">Migori</option>
+                                <option value="Mombasa">Mombasa</option>
+                                <option value="Murang'a">Murang'a</option>
+                                <option value="Nairobi">Nairobi</option>
+                                <option value="Nakuru">Nakuru</option>
+                                <option value="Nandi">Nandi</option>
+                                <option value="Narok">Narok</option>
+                                <option value="Nyamira">Nyamira</option>
+                                <option value="Nyandarua">Nyandarua</option>
+                                <option value="Nyeri">Nyeri</option>
+                                <option value="Samburu">Samburu</option>
+                                <option value="Siaya">Siaya</option>
+                                <option value="Taita-Taveta">Taita-Taveta</option>
+                                <option value="Tana River">Tana River</option>
+                                <option value="Tharaka-Nithi">Tharaka-Nithi</option>
+                                <option value="Trans Nzoia">Trans Nzoia</option>
+                                <option value="Turkana">Turkana</option>
+                                <option value="Uasin Gishu">Uasin Gishu</option>
+                                <option value="Vihiga">Vihiga</option>
+                                <option value="Wajir">Wajir</option>
+                                <option value="West Pokot">West Pokot</option>
+                            </select>
+                            <span class="error-message" id="countyError"></span>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password <span class="required">*</span></label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                class="form-input" 
+                                placeholder="Create a strong password"
+                                required
+                                minlength="8"
+                            >
+                            <span class="help-text">Minimum 8 characters</span>
+                            <span class="error-message" id="passwordError"></span>
+                        </div>
+
+                        <!-- Confirm Password -->
+                        <div class="form-group">
+                            <label for="confirmPassword" class="form-label">Confirm Password <span class="required">*</span></label>
+                            <input 
+                                type="password" 
+                                id="confirmPassword" 
+                                name="confirmPassword" 
+                                class="form-input" 
+                                placeholder="Re-enter your password"
+                                required
+                            >
+                            <span class="error-message" id="confirmPasswordError"></span>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                                <span class="checkbox-text">
+                                    I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>
+                                    <span class="required">*</span>
+                                </span>
+                            </label>
+                            <span class="error-message" id="agreeTermsError"></span>
+                        </div>
+
+                        <!-- Marketing Consent -->
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="marketingConsent" name="marketingConsent">
+                                <span class="checkbox-text">
+                                    I consent to receiving marketing communications and updates about new vehicles
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            Create Account
+                        </button>
+
+                        <p class="form-footer">
+                            Already have an account? <a href="#" class="link">Sign In</a>
+                        </p>
+                    </form>
+
+                    <div id="successMessage" class="success-message hidden">
+                        <div class="success-icon">✓</div>
+                        <h3>Registration Successful!</h3>
+                        <p>Your account has been created. You can now explore our full features.</p>
+                        <button class="btn btn-primary" onclick="location.href='listings.html'">Browse Cars</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AutoHub Kenya</h3>
+                    <p>Your trusted partner in finding the perfect vehicle across Kenya.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="listings.html">Browse Cars</a></li>
+                        <li><a href="comparison.html">Compare</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html#cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📧 info@autohub.co.ke</li>
+                        <li>📞 +254 700 123 456</li>
+                        <li>📍 Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoHub Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

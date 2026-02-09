@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kenya's trusted marketplace for new and used cars. Find Toyota, Nissan, Honda, Subaru, and Volkswagen vehicles.">
+    <title>AutoHub Kenya - Your Trusted Car Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent hidden">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>🍪 We Value Your Privacy</h3>
+                <p>We use cookies to enhance your browsing experience, track viewed cars, and remember your preferences. By clicking "Accept", you consent to our use of cookies in accordance with Kenya's Data Protection Act (2019). <a href="privacy.html">Learn more</a></p>
+            </div>
+            <div class="cookie-actions">
+                <button id="acceptCookies" class="btn btn-primary">Accept All</button>
+                <button id="rejectCookies" class="btn btn-secondary">Reject Non-Essential</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <span class="logo">🚗 AutoHub</span>
+                    <span class="logo-subtitle">Kenya</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="listings.html">Browse Cars</a></li>
+                <li><a href="comparison.html">Compare</a></li>
+                <li><a href="wishlist.html">Wishlist <span id="wishlistCount" class="badge">0</span></a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline" onclick="location.href='register.html'">Sign Up</button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Find Your Perfect Ride in Kenya</h1>
+            <p class="hero-subtitle">Browse thousands of new and used cars from trusted dealers across all 47 counties</p>
+            <div class="hero-search">
+                <input type="text" placeholder="Search by brand, model, or keyword..." id="heroSearch">
+                <button class="btn btn-primary btn-large" onclick="searchFromHero()">
+                    <span>Search Now</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2,500+</span>
+                    <span class="stat-label">Cars Available</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">47</span>
+                    <span class="stat-label">Counties Covered</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Verified Listings</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Brands -->
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">Featured Brands</h2>
+            <div class="brands-grid">
+                <div class="brand-card" data-brand="toyota">
+                    <div class="brand-icon">🚙</div>
+                    <h3>Toyota</h3>
+                    <p>450+ vehicles</p>
+                </div>
+                <div class="brand-card" data-brand="nissan">
+                    <div class="brand-icon">🚗</div>
+                    <h3>Nissan</h3>
+                    <p>320+ vehicles</p>
+                </div>
+                <div class="brand-card" data-brand="honda">
+                    <div class="brand-icon">🏎️</div>
+                    <h3>Honda</h3>
+                    <p>280+ vehicles</p>
+                </div>
+                <div class="brand-card" data-brand="subaru">
+                    <div class="brand-icon">🚐</div>
+                    <h3>Subaru</h3>
+                    <p>190+ vehicles</p>
+                </div>
+                <div class="brand-card" data-brand="volkswagen">
+                    <div class="brand-icon">🚕</div>
+                    <h3>Volkswagen</h3>
+                    <p>160+ vehicles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Vehicles</h2>
+                <a href="listings.html" class="btn btn-outline">View All Cars →</a>
+            </div>
+            <div class="cars-grid" id="featuredCars">
+                <!-- Featured cars will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose AutoHub Kenya?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Data Privacy Protected</h3>
+                    <p>Fully compliant with Kenya's Data Protection Act (2019). Your information is secure.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>Verified Listings</h3>
+                    <p>Every vehicle is inspected and verified before listing on our platform.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Nationwide Coverage</h3>
+                    <p>Find cars across all 47 counties in Kenya with easy location filtering.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with transparent costs. No hidden fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AutoHub Kenya</h3>
+                    <p>Your trusted partner in finding the perfect vehicle across Kenya.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="listings.html">Browse Cars</a></li>
+                        <li><a href="comparison.html">Compare</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html#cookies">Cookie Policy</a></li>
+                        <li><a href="privacy.html#data-protection">Data Protection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📧 info@autohub.co.ke</li>
+                        <li>📞 +254 700 123 456</li>
+                        <li>📍 Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoHub Kenya. All rights reserved. | Compliant with Kenya Data Protection Act (2019)</p>
+                <p class="footer-legal">Licensed by Office of the Data Protection Commissioner (ODPC)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
